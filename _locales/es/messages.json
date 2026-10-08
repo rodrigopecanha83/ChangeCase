@@ -11,6 +11,26 @@
     "message": "Conversor de Texto",
     "description": "Título del encabezado en la ventana emergente."
   },
+  "contextMenuParent": {
+    "message": "Change Case",
+    "description": "Menú contextual principal."
+  },
+  "cmdUppercase": {
+    "message": "Convertir selección/portapapeles a MAYÚSCULAS",
+    "description": "Descripción del atajo de teclado."
+  },
+  "cmdLowercase": {
+    "message": "Convertir selección/portapapeles a minúsculas",
+    "description": "Descripción del atajo de teclado."
+  },
+  "cmdTitleCase": {
+    "message": "Convertir selección/portapapeles a Tipo Título",
+    "description": "Descripción del atajo de teclado."
+  },
+  "cmdCamelCase": {
+    "message": "Convertir selección/portapapeles a camelCase",
+    "description": "Descripción del atajo de teclado."
+  },
   "btnCapitalize": {
     "message": "Tipo oración",
     "description": "Mayúscula al inicio de cada oración."
@@ -33,7 +53,7 @@
   },
   "btnPascalCase": {
     "message": "PascalCase",
-    "description": "Botón PascalCase."
+    "description": "Botão PascalCase."
   },
   "btnCamelCase": {
     "message": "camelCase",

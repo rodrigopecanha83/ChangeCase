@@ -11,6 +11,26 @@
     "message": "Conversor de Texto",
     "description": "Título do cabeçalho no popup."
   },
+  "contextMenuParent": {
+    "message": "Change Case",
+    "description": "Menu de contexto principal."
+  },
+  "cmdUppercase": {
+    "message": "Converter seleção/clipboard para MAIÚSCULAS",
+    "description": "Descrição do atalho de teclado."
+  },
+  "cmdLowercase": {
+    "message": "Converter seleção/clipboard para minúsculas",
+    "description": "Descrição do atalho de teclado."
+  },
+  "cmdTitleCase": {
+    "message": "Converter seleção/clipboard para Primeira Letra De Cada Palavra",
+    "description": "Descrição do atalho de teclado."
+  },
+  "cmdCamelCase": {
+    "message": "Converter seleção/clipboard para camelCase",
+    "description": "Descrição do atalho de teclado."
+  },
   "btnCapitalize": {
     "message": "Primeira letra maiúscula",
     "description": "Capitaliza o início das frases."

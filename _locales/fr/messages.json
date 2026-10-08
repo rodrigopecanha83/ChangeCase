@@ -11,6 +11,26 @@
     "message": "Convertisseur de Texte",
     "description": "Titre d'en-tête du popup."
   },
+  "contextMenuParent": {
+    "message": "Change Case",
+    "description": "Menu contextuel principal."
+  },
+  "cmdUppercase": {
+    "message": "Convertir la sélection/le presse-papiers en MAJUSCULES",
+    "description": "Description du raccourci clavier."
+  },
+  "cmdLowercase": {
+    "message": "Convertir la sélection/le presse-papiers en minuscules",
+    "description": "Description du raccourci clavier."
+  },
+  "cmdTitleCase": {
+    "message": "Convertir la sélection/le presse-papiers en Majuscule À Chaque Mot",
+    "description": "Description du raccourci clavier."
+  },
+  "cmdCamelCase": {
+    "message": "Convertir la sélection/le presse-papiers en camelCase",
+    "description": "Description du raccourci clavier."
+  },
   "btnCapitalize": {
     "message": "Majuscule en début de phrase",
     "description": "Bouton première lettre en majuscule."

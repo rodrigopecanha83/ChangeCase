@@ -11,6 +11,26 @@
     "message": "Clipboard Text Converter",
     "description": "Header title displayed in the popup."
   },
+  "contextMenuParent": {
+    "message": "Change Case",
+    "description": "Parent context menu item."
+  },
+  "cmdUppercase": {
+    "message": "Convert selection/clipboard to UPPERCASE",
+    "description": "Keyboard shortcut description."
+  },
+  "cmdLowercase": {
+    "message": "Convert selection/clipboard to lowercase",
+    "description": "Keyboard shortcut description."
+  },
+  "cmdTitleCase": {
+    "message": "Convert selection/clipboard to Title Case",
+    "description": "Keyboard shortcut description."
+  },
+  "cmdCamelCase": {
+    "message": "Convert selection/clipboard to camelCase",
+    "description": "Keyboard shortcut description."
+  },
   "btnCapitalize": {
     "message": "Sentence case",
     "description": "Capitalize first letter of sentences."
