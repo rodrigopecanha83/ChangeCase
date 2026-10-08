@@ -1,0 +1,6 @@
+# Arquivos temporários e empacotados
+*.zip
+.DS_Store
+Thumbs.db
+
+# Imagens promocionais pesadas que não precisam ir no bundle final (opcional manter caso queira no repo)

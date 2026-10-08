@@ -1,0 +1,98 @@
+/* --- Configuração Geral --- */
+body {
+  margin: 0;
+  padding: 8px 0; /* Adiciona espaço em cima e embaixo, mas não nas laterais */
+  background-color: #f7f7f7;
+  width: 240px; /* Um pouco mais largo para conforto */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: #333;
+}
+
+/* --- Cabeçalho --- */
+.header {
+  text-align: center;
+  padding: 4px 16px 12px 16px; /* Espaçamento interno */
+  border-bottom: 1px solid #e0e0e0; /* Linha separadora sutil */
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600; /* Um pouco mais forte que o normal */
+}
+
+/* --- Contêiner dos Botões --- */
+.button-container {
+  /* Organiza os botões verticalmente */
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px; /* Espaço nas laterais e entre o cabeçalho */
+  gap: 6px; /* Espaço entre cada botão */
+}
+
+/* --- Estilo dos Botões --- */
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  
+  background-color: #ffffff; /* Fundo branco */
+  border: 1px solid #dcdcdc; /* Borda cinza clara */
+  border-radius: 6px; /* Cantos levemente arredondados */
+  
+  color: #444; /* Cor do texto */
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+  
+  text-align: left; /* Alinha o texto à esquerda para um look mais "menu" */
+  padding-left: 16px; /* Dá um espaço à esquerda do texto */
+  
+  /* Transição suave para o efeito hover */
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* --- Efeitos do Mouse --- */
+
+/* Ao passar o mouse por cima */
+button:hover {
+  background-color: #f0f0f0; /* Fundo levemente acinzentado */
+  border-color: #c0c0c0; /* Borda um pouco mais escura */
+}
+
+/* Ao clicar no botão */
+button:active {
+  background-color: #e0e0e0; /* Fica mais escuro ao clicar */
+  border-color: #b0b0b0;
+  /* Remove qualquer sombra de clique padrão */
+  box-shadow: none; 
+}
+
+/* Remove a borda azul de "foco" que o Chrome adiciona */
+button:focus {
+  outline: none;
+}
+
+/* --- ESTADOS DE FEEDBACK (NOVO) --- */
+
+/* Estilo de Sucesso (verde) */
+button.clicked {
+  background-color: #E8F5E9; /* Fundo verde bem claro */
+  border-color: #66BB6A; /* Borda verde média */
+  color: #2E7D32; /* Texto verde escuro */
+  font-weight: 600; /* Um pouco mais de destaque no texto */
+}
+
+/* Estilo de Erro (vermelho) */
+button.error {
+  background-color: #FFEBEE; /* Fundo vermelho bem claro */
+  border-color: #EF5350; /* Borda vermelha média */
+  color: #C62828; /* Texto vermelho escuro */
+  font-weight: 600;
+}
+
+/* --- NOVO ESTILO PARA O SEPARADOR --- */
+hr.separator {
+  border: none; /* Remove a borda padrão */
+  border-top: 1px solid #e0e0e0; /* Adiciona só uma linha superior fina */
+  margin: 4px 0; /* Espaçamento vertical pequeno */
+}
