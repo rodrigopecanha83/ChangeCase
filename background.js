@@ -42,8 +42,10 @@ chrome.runtime.onInstalled.addListener(() => {
   });
 });
 
-// Helper de injeção na página
-function applyTextReplacement(text) {
+/**
+ * Função injetada na página para aplicar o texto ou copiar com feedback toast discreto
+ */
+function injectTextOrCopy(convertedText, labelText) {
   const activeEl = document.activeElement;
   const isInput = activeEl && (
     activeEl.tagName === 'INPUT' ||
@@ -51,18 +53,64 @@ function applyTextReplacement(text) {
     activeEl.isContentEditable
   );
 
+  let replaced = false;
+
   if (isInput && !activeEl.isContentEditable && typeof activeEl.selectionStart === 'number') {
     const start = activeEl.selectionStart;
     const end = activeEl.selectionEnd;
-    activeEl.setRangeText(text, start, end, 'select');
+    activeEl.setRangeText(convertedText, start, end, 'select');
     activeEl.dispatchEvent(new Event('input', { bubbles: true }));
+    replaced = true;
   } else if (document.queryCommandSupported && document.queryCommandSupported('insertText')) {
-    const success = document.execCommand('insertText', false, text);
-    if (!success) {
-      navigator.clipboard.writeText(text);
-    }
-  } else {
-    navigator.clipboard.writeText(text);
+    replaced = document.execCommand('insertText', false, convertedText);
+  }
+
+  if (!replaced) {
+    navigator.clipboard.writeText(convertedText).then(() => {
+      showToast(labelText ? `${labelText}: Copied!` : 'Copied to clipboard!');
+    }).catch(() => {
+      showToast('Error copying to clipboard');
+    });
+  }
+
+  function showToast(message) {
+    const existing = document.getElementById('change-case-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'change-case-toast';
+    toast.textContent = message;
+    Object.assign(toast.style, {
+      position: 'fixed',
+      bottom: '24px',
+      right: '24px',
+      backgroundColor: '#1f2937',
+      color: '#ffffff',
+      padding: '10px 18px',
+      borderRadius: '8px',
+      boxShadow: '0 4px 14px rgba(0, 0, 0, 0.25)',
+      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+      fontSize: '13px',
+      fontWeight: '500',
+      zIndex: '2147483647',
+      transition: 'opacity 0.25s ease, transform 0.25s ease',
+      opacity: '0',
+      transform: 'translateY(10px)',
+      pointerEvents: 'none'
+    });
+
+    document.body.appendChild(toast);
+
+    requestAnimationFrame(() => {
+      toast.style.opacity = '1';
+      toast.style.transform = 'translateY(0)';
+    });
+
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      toast.style.transform = 'translateY(10px)';
+      setTimeout(() => toast.remove(), 300);
+    }, 2000);
   }
 }
 
@@ -79,13 +127,15 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
   chrome.scripting.executeScript({
     target: { tabId: tab.id },
-    func: applyTextReplacement,
-    args: [convertedText]
+    func: injectTextOrCopy,
+    args: [convertedText, actionName]
   });
 });
 
-// --- Configuração dos Atalhos de Teclado (Commands) ---
+// Manipula Atalhos de Teclado (Commands) de forma 100% segura (sem new Function)
 chrome.commands.onCommand.addListener(async (command, tab) => {
+  if (!tab?.id) return;
+
   let converterName = '';
   if (command === 'convert-uppercase') converterName = 'toUppercase';
   else if (command === 'convert-lowercase') converterName = 'toLowercase';
@@ -95,46 +145,24 @@ chrome.commands.onCommand.addListener(async (command, tab) => {
   const converterFn = converters[converterName];
   if (!converterFn) return;
 
-  if (tab?.id) {
-    chrome.scripting.executeScript({
+  // Primeiro recuperamos o texto selecionado na aba atual
+  try {
+    const results = await chrome.scripting.executeScript({
       target: { tabId: tab.id },
-      func: (fnSource) => {
-        const converter = new Function('text', 'return (' + fnSource + ')(text);');
-        const selected = window.getSelection().toString();
-        
-        if (selected) {
-          const result = converter(selected);
-          
-          const activeEl = document.activeElement;
-          const isInput = activeEl && (
-            activeEl.tagName === 'INPUT' ||
-            activeEl.tagName === 'TEXTAREA' ||
-            activeEl.isContentEditable
-          );
-
-          if (isInput && !activeEl.isContentEditable && typeof activeEl.selectionStart === 'number') {
-            const start = activeEl.selectionStart;
-            const end = activeEl.selectionEnd;
-            activeEl.setRangeText(result, start, end, 'select');
-            activeEl.dispatchEvent(new Event('input', { bubbles: true }));
-          } else if (document.queryCommandSupported && document.queryCommandSupported('insertText')) {
-            const success = document.execCommand('insertText', false, result);
-            if (!success) {
-              navigator.clipboard.writeText(result);
-            }
-          } else {
-            navigator.clipboard.writeText(result);
-          }
-        } else {
-          // Se não houver seleção, atualiza o clipboard diretamente
-          navigator.clipboard.readText().then(clipText => {
-            if (clipText) {
-              navigator.clipboard.writeText(converter(clipText));
-            }
-          }).catch(console.error);
-        }
-      },
-      args: [converterFn.toString()]
+      func: () => window.getSelection().toString()
     });
+
+    const selection = results?.[0]?.result;
+
+    if (selection) {
+      const convertedText = converterFn(selection);
+      await chrome.scripting.executeScript({
+        target: { tabId: tab.id },
+        func: injectTextOrCopy,
+        args: [convertedText, converterName]
+      });
+    }
+  } catch (err) {
+    console.error('Change Case shortcut execution failed:', err);
   }
 });
