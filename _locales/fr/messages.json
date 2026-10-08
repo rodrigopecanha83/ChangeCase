@@ -4,7 +4,7 @@
     "description": "Nom de l'extension."
   },
   "appDesc": {
-    "message": "Convertissez rapidement le texte du presse-papiers en Majuscule en début de phrase, MAJUSCULES, minuscules, camelCase, snake_case et plus.",
+    "message": "Convertissez rapidement le texte du presse-papiers en Majuscule en début de phrase, MAJUSCULES, minuscules, CONSTANT_CASE, camelCase, snake_case et plus.",
     "description": "Description de l'extension."
   },
   "headerTitle": {
@@ -26,6 +26,10 @@
   "btnLowercase": {
     "message": "minuscules",
     "description": "Bouton minuscules."
+  },
+  "btnConstantCase": {
+    "message": "CONSTANT_CASE",
+    "description": "Bouton CONSTANT_CASE."
   },
   "btnPascalCase": {
     "message": "PascalCase",

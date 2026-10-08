@@ -4,7 +4,7 @@
     "description": "Nome da extensão."
   },
   "appDesc": {
-    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, camelCase, snake_case e mais.",
+    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, CONSTANT_CASE, camelCase, snake_case e mais.",
     "description": "Descrição da extensão."
   },
   "headerTitle": {
@@ -26,6 +26,10 @@
   "btnLowercase": {
     "message": "minúsculas",
     "description": "Botão minúsculas."
+  },
+  "btnConstantCase": {
+    "message": "CONSTANT_CASE",
+    "description": "Botão CONSTANT_CASE."
   },
   "btnPascalCase": {
     "message": "PascalCase",

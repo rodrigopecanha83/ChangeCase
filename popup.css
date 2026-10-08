@@ -1,98 +1,134 @@
 /* --- Configuração Geral --- */
+:root {
+  --bg-color: #f7f7f7;
+  --text-color: #333333;
+  --border-subtle: #e0e0e0;
+  --btn-bg: #ffffff;
+  --btn-border: #dcdcdc;
+  --btn-hover-bg: #f0f0f0;
+  --btn-hover-border: #c0c0c0;
+  --btn-active-bg: #e0e0e0;
+  --btn-active-border: #b0b0b0;
+  --btn-text: #444444;
+  
+  --success-bg: #e8f5e9;
+  --success-border: #66bb6a;
+  --success-text: #2e7d32;
+
+  --error-bg: #ffebee;
+  --error-border: #ef5350;
+  --error-text: #c62828;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --border-subtle: #333333;
+    --btn-bg: #2a2a2a;
+    --btn-border: #3d3d3d;
+    --btn-hover-bg: #363636;
+    --btn-hover-border: #505050;
+    --btn-active-bg: #404040;
+    --btn-active-border: #606060;
+    --btn-text: #e0e0e0;
+
+    --success-bg: #1b3820;
+    --success-border: #388e3c;
+    --success-text: #a5d6a7;
+
+    --error-bg: #3e1b1b;
+    --error-border: #d32f2f;
+    --error-text: #ef9a9a;
+  }
+}
+
 body {
   margin: 0;
-  padding: 8px 0; /* Adiciona espaço em cima e embaixo, mas não nas laterais */
-  background-color: #f7f7f7;
-  width: 240px; /* Um pouco mais largo para conforto */
+  padding: 8px 0;
+  background-color: var(--bg-color);
+  width: 240px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #333;
+  color: var(--text-color);
+  user-select: none;
 }
 
 /* --- Cabeçalho --- */
 .header {
   text-align: center;
-  padding: 4px 16px 12px 16px; /* Espaçamento interno */
-  border-bottom: 1px solid #e0e0e0; /* Linha separadora sutil */
+  padding: 4px 16px 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
 }
 
 .header h3 {
   margin: 0;
-  font-size: 16px;
-  font-weight: 600; /* Um pouco mais forte que o normal */
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 /* --- Contêiner dos Botões --- */
 .button-container {
-  /* Organiza os botões verticalmente */
   display: flex;
   flex-direction: column;
-  padding: 8px 12px; /* Espaço nas laterais e entre o cabeçalho */
-  gap: 6px; /* Espaço entre cada botão */
+  padding: 8px 12px;
+  gap: 5px;
 }
 
 /* --- Estilo dos Botões --- */
 button {
   width: 100%;
-  padding: 10px;
-  font-size: 14px;
+  padding: 9px 12px 9px 14px;
+  font-size: 13.5px;
   font-weight: 500;
   
-  background-color: #ffffff; /* Fundo branco */
-  border: 1px solid #dcdcdc; /* Borda cinza clara */
-  border-radius: 6px; /* Cantos levemente arredondados */
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-border);
+  border-radius: 6px;
   
-  color: #444; /* Cor do texto */
-  cursor: pointer; /* Mãozinha ao passar o mouse */
+  color: var(--btn-text);
+  cursor: pointer;
   
-  text-align: left; /* Alinha o texto à esquerda para um look mais "menu" */
-  padding-left: 16px; /* Dá um espaço à esquerda do texto */
+  text-align: left;
   
-  /* Transição suave para o efeito hover */
-  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
 }
 
 /* --- Efeitos do Mouse --- */
-
-/* Ao passar o mouse por cima */
 button:hover {
-  background-color: #f0f0f0; /* Fundo levemente acinzentado */
-  border-color: #c0c0c0; /* Borda um pouco mais escura */
+  background-color: var(--btn-hover-bg);
+  border-color: var(--btn-hover-border);
 }
 
-/* Ao clicar no botão */
 button:active {
-  background-color: #e0e0e0; /* Fica mais escuro ao clicar */
-  border-color: #b0b0b0;
-  /* Remove qualquer sombra de clique padrão */
+  background-color: var(--btn-active-bg);
+  border-color: var(--btn-active-border);
   box-shadow: none; 
 }
 
-/* Remove a borda azul de "foco" que o Chrome adiciona */
 button:focus {
   outline: none;
 }
 
-/* --- ESTADOS DE FEEDBACK (NOVO) --- */
+/* --- ESTADOS DE FEEDBACK --- */
 
-/* Estilo de Sucesso (verde) */
 button.clicked {
-  background-color: #E8F5E9; /* Fundo verde bem claro */
-  border-color: #66BB6A; /* Borda verde média */
-  color: #2E7D32; /* Texto verde escuro */
-  font-weight: 600; /* Um pouco mais de destaque no texto */
-}
-
-/* Estilo de Erro (vermelho) */
-button.error {
-  background-color: #FFEBEE; /* Fundo vermelho bem claro */
-  border-color: #EF5350; /* Borda vermelha média */
-  color: #C62828; /* Texto vermelho escuro */
+  background-color: var(--success-bg) !important;
+  border-color: var(--success-border) !important;
+  color: var(--success-text) !important;
   font-weight: 600;
 }
 
-/* --- NOVO ESTILO PARA O SEPARADOR --- */
+button.error {
+  background-color: var(--error-bg) !important;
+  border-color: var(--error-border) !important;
+  color: var(--error-text) !important;
+  font-weight: 600;
+}
+
+/* --- Separador --- */
 hr.separator {
-  border: none; /* Remove a borda padrão */
-  border-top: 1px solid #e0e0e0; /* Adiciona só uma linha superior fina */
-  margin: 4px 0; /* Espaçamento vertical pequeno */
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 3px 0;
 }

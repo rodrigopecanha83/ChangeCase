@@ -4,7 +4,7 @@
     "description": "The name of the extension."
   },
   "appDesc": {
-    "message": "Quickly convert clipboard text to Sentence case, Title Case, UPPERCASE, lowercase, camelCase, snake_case, PascalCase and more.",
+    "message": "Quickly convert clipboard text to Sentence case, Title Case, UPPERCASE, lowercase, CONSTANT_CASE, camelCase, snake_case and more.",
     "description": "The description of the extension."
   },
   "headerTitle": {
@@ -26,6 +26,10 @@
   "btnLowercase": {
     "message": "lowercase",
     "description": "lowercase button label."
+  },
+  "btnConstantCase": {
+    "message": "CONSTANT_CASE",
+    "description": "CONSTANT_CASE button label."
   },
   "btnPascalCase": {
     "message": "PascalCase",

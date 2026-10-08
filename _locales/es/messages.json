@@ -4,7 +4,7 @@
     "description": "Nombre de la extensión."
   },
   "appDesc": {
-    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, camelCase, snake_case y más.",
+    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, CONSTANT_CASE, camelCase, snake_case y más.",
     "description": "Descripción de la extensión."
   },
   "headerTitle": {
@@ -26,6 +26,10 @@
   "btnLowercase": {
     "message": "minúsculas",
     "description": "Botón minúsculas."
+  },
+  "btnConstantCase": {
+    "message": "CONSTANT_CASE",
+    "description": "Botón CONSTANT_CASE."
   },
   "btnPascalCase": {
     "message": "PascalCase",
