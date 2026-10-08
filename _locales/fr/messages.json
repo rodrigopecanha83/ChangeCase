@@ -1,0 +1,54 @@
+{
+  "appName": {
+    "message": "Change Case - Convertisseur de Texte",
+    "description": "Nom de l'extension."
+  },
+  "appDesc": {
+    "message": "Convertissez rapidement le texte du presse-papiers en Majuscule en début de phrase, MAJUSCULES, minuscules, camelCase, snake_case et plus.",
+    "description": "Description de l'extension."
+  },
+  "headerTitle": {
+    "message": "Convertisseur de Texte",
+    "description": "Titre d'en-tête du popup."
+  },
+  "btnCapitalize": {
+    "message": "Majuscule en début de phrase",
+    "description": "Bouton première lettre en majuscule."
+  },
+  "btnTitleCase": {
+    "message": "Majuscule À Chaque Mot",
+    "description": "Bouton Title Case."
+  },
+  "btnUppercase": {
+    "message": "MAJUSCULES",
+    "description": "Bouton MAJUSCULES."
+  },
+  "btnLowercase": {
+    "message": "minuscules",
+    "description": "Bouton minuscules."
+  },
+  "btnPascalCase": {
+    "message": "PascalCase",
+    "description": "Bouton PascalCase."
+  },
+  "btnCamelCase": {
+    "message": "camelCase",
+    "description": "Bouton camelCase."
+  },
+  "btnSnakeCase": {
+    "message": "snake_case",
+    "description": "Bouton snake_case."
+  },
+  "btnDotCase": {
+    "message": "dot.case",
+    "description": "Bouton dot.case."
+  },
+  "btnParamCase": {
+    "message": "param-case",
+    "description": "Bouton param-case."
+  },
+  "btnNoAccents": {
+    "message": "Sans accents",
+    "description": "Bouton sans accents."
+  }
+}

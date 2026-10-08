@@ -1,0 +1,54 @@
+{
+  "appName": {
+    "message": "Change Case - Clipboard Text Converter",
+    "description": "The name of the extension."
+  },
+  "appDesc": {
+    "message": "Quickly convert clipboard text to Sentence case, Title Case, UPPERCASE, lowercase, camelCase, snake_case, PascalCase and more.",
+    "description": "The description of the extension."
+  },
+  "headerTitle": {
+    "message": "Clipboard Text Converter",
+    "description": "Header title displayed in the popup."
+  },
+  "btnCapitalize": {
+    "message": "Sentence case",
+    "description": "Capitalize first letter of sentences."
+  },
+  "btnTitleCase": {
+    "message": "Title Case",
+    "description": "Title Case button label."
+  },
+  "btnUppercase": {
+    "message": "UPPERCASE",
+    "description": "UPPERCASE button label."
+  },
+  "btnLowercase": {
+    "message": "lowercase",
+    "description": "lowercase button label."
+  },
+  "btnPascalCase": {
+    "message": "PascalCase",
+    "description": "PascalCase button label."
+  },
+  "btnCamelCase": {
+    "message": "camelCase",
+    "description": "camelCase button label."
+  },
+  "btnSnakeCase": {
+    "message": "snake_case",
+    "description": "snake_case button label."
+  },
+  "btnDotCase": {
+    "message": "dot.case",
+    "description": "dot.case button label."
+  },
+  "btnParamCase": {
+    "message": "param-case",
+    "description": "param-case button label."
+  },
+  "btnNoAccents": {
+    "message": "No accents",
+    "description": "Remove accents button label."
+  }
+}

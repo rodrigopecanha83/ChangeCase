@@ -208,10 +208,23 @@ async function processClipboard(conversionFunction, buttonElement) {
   }
 }
 
+// --- Inicialização e Tradução (i18n) ---
+function applyTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    const messageKey = element.getAttribute('data-i18n');
+    const message = chrome.i18n.getMessage(messageKey);
+    if (message) {
+      element.textContent = message;
+    }
+  });
+}
+
 // --- Adicionar "Ouvintes" de Eventos ---
 
 // Espera o HTML (popup.html) carregar completamente
 document.addEventListener('DOMContentLoaded', () => {
+  // Aplica as traduções conforme o idioma do navegador
+  applyTranslations();
   
   // Modificamos os 'listeners' para passar o próprio elemento do botão
   // O 'event.currentTarget' é o botão que disparou o evento de clique.

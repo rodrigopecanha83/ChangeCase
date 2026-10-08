@@ -1,8 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Change Case Extension",
+  "default_locale": "en",
+  "name": "__MSG_appName__",
   "version": "2.0",
-  "description": "Converts the clipboard text to: Capitalize, Title Case, UPPERCASE, and lowercase.",
+  "description": "__MSG_appDesc__",
   
   "permissions": [
     "clipboardRead",
@@ -22,11 +23,11 @@
   },
   
   "icons": {
-      "16": "Icon16.png",
-      "32": "Icon32.png",
-      "64": "Icon64.png",
-      "128": "Icon128.png",
-      "256": "Icon256.png",
-      "512": "Icon512.png"
+    "16": "Icon16.png",
+    "32": "Icon32.png",
+    "64": "Icon64.png",
+    "128": "Icon128.png",
+    "256": "Icon256.png",
+    "512": "Icon512.png"
   }
 }

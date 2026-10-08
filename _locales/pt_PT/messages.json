@@ -1,0 +1,54 @@
+{
+  "appName": {
+    "message": "Change Case - Conversor de Texto",
+    "description": "Nome da extensão."
+  },
+  "appDesc": {
+    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, camelCase, snake_case e mais.",
+    "description": "Descrição da extensão."
+  },
+  "headerTitle": {
+    "message": "Conversor de Texto",
+    "description": "Título do cabeçalho no popup."
+  },
+  "btnCapitalize": {
+    "message": "Primeira letra maiúscula",
+    "description": "Capitaliza o início das frases."
+  },
+  "btnTitleCase": {
+    "message": "Primeira Letra De Cada Palavra",
+    "description": "Title Case."
+  },
+  "btnUppercase": {
+    "message": "MAIÚSCULAS",
+    "description": "Botão MAIÚSCULAS."
+  },
+  "btnLowercase": {
+    "message": "minúsculas",
+    "description": "Botão minúsculas."
+  },
+  "btnPascalCase": {
+    "message": "PascalCase",
+    "description": "Botão PascalCase."
+  },
+  "btnCamelCase": {
+    "message": "camelCase",
+    "description": "Botão camelCase."
+  },
+  "btnSnakeCase": {
+    "message": "snake_case",
+    "description": "Botão snake_case."
+  },
+  "btnDotCase": {
+    "message": "dot.case",
+    "description": "Botão dot.case."
+  },
+  "btnParamCase": {
+    "message": "param-case",
+    "description": "Botão param-case."
+  },
+  "btnNoAccents": {
+    "message": "Sem acentos",
+    "description": "Botão para remover acentos."
+  }
+}

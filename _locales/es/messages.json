@@ -1,0 +1,54 @@
+{
+  "appName": {
+    "message": "Change Case - Conversor de Texto",
+    "description": "Nombre de la extensión."
+  },
+  "appDesc": {
+    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, camelCase, snake_case y más.",
+    "description": "Descripción de la extensión."
+  },
+  "headerTitle": {
+    "message": "Conversor de Texto",
+    "description": "Título del encabezado en la ventana emergente."
+  },
+  "btnCapitalize": {
+    "message": "Tipo oración",
+    "description": "Mayúscula al inicio de cada oración."
+  },
+  "btnTitleCase": {
+    "message": "Tipo Título",
+    "description": "Title Case."
+  },
+  "btnUppercase": {
+    "message": "MAYÚSCULAS",
+    "description": "Botón MAYÚSCULAS."
+  },
+  "btnLowercase": {
+    "message": "minúsculas",
+    "description": "Botón minúsculas."
+  },
+  "btnPascalCase": {
+    "message": "PascalCase",
+    "description": "Botón PascalCase."
+  },
+  "btnCamelCase": {
+    "message": "camelCase",
+    "description": "Botón camelCase."
+  },
+  "btnSnakeCase": {
+    "message": "snake_case",
+    "description": "Botón snake_case."
+  },
+  "btnDotCase": {
+    "message": "dot.case",
+    "description": "Botón dot.case."
+  },
+  "btnParamCase": {
+    "message": "param-case",
+    "description": "Botón param-case."
+  },
+  "btnNoAccents": {
+    "message": "Sin acentos",
+    "description": "Botón para eliminar acentos."
+  }
+}
