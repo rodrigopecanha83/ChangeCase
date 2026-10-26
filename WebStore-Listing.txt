@@ -58,7 +58,15 @@ BLOCO 2: PRIVACIDADE (Aba "Privacidade" do Chrome Developer Dashboard)
 --------------------------------------------------------------------------------
 
 [Descrição do Único Propósito (Single Purpose Policy)]
-O único propósito da extensão Change Case é converter e formatar textos selecionados ou presentes na área de transferência do usuário entre múltiplos estilos de capitalização e nomenclatura (como Title Case, camelCase, Title-Kebab-Case Chicago, UPPERCASE, entre outros) de forma estritamente local e sob demanda.
+(English - Recomendado para o Developer Dashboard):
+The extension's single purpose is to read text from the user's clipboard or active selection, apply one of 11 text case conversions (Sentence case, Title Case, Title-Kebab-Case (Chicago), UPPERCASE, lowercase, CONSTANT_CASE, PascalCase, camelCase, snake_case, dot.case, param-case, No accents) locally in the browser, and provide the newly formatted text.
+
+The extension does not collect, store, or transmit any clipboard data or personal information. Its entire function is executed locally on the user's device.
+
+(Versão em Português):
+O único propósito da extensão é ler o texto da área de transferência do usuário ou da seleção ativa, aplicar uma das 11 conversões de caixa de texto (Sentence case, Title Case, Title-Kebab-Case (Chicago), UPPERCASE, lowercase, CONSTANT_CASE, PascalCase, camelCase, snake_case, dot.case, param-case, Sem acentos) localmente no navegador e fornecer o texto recém-formatado.
+
+A extensão não coleta, não armazena e não transmite quaisquer dados da área de transferência ou informações pessoais. Toda a sua funcionalidade é executada localmente no dispositivo do usuário.
 
 [Justificativa Técnica das Permissões]
 
