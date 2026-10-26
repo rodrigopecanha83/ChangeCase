@@ -4,7 +4,7 @@
     "description": "Nombre de la extensión."
   },
   "appDesc": {
-    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, Title-Kebab-Case (Chicago), CONSTANT_CASE, camelCase, snake_case y más.",
+    "message": "Convierte texto a Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAYÚSCULAS, minúsculas y más.",
     "description": "Descripción de la extensión."
   },
   "releaseNotesV22": {

@@ -4,7 +4,7 @@
     "description": "The name of the extension."
   },
   "appDesc": {
-    "message": "Quickly convert clipboard text to Sentence case, Title Case, Title-Kebab-Case (Chicago), UPPERCASE, lowercase, CONSTANT_CASE, camelCase, snake_case and more.",
+    "message": "Convert clipboard text to Title Case, Title-Kebab-Case (Chicago), UPPERCASE, lowercase, camelCase, snake_case and more.",
     "description": "The description of the extension."
   },
   "releaseNotesV22": {

@@ -4,7 +4,7 @@
     "description": "Nome da extensão."
   },
   "appDesc": {
-    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, Title-Kebab-Case (Chicago), CONSTANT_CASE, camelCase, snake_case e mais.",
+    "message": "Converta textos para Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAIÚSCULAS, minúsculas e mais.",
     "description": "Descrição da extensão."
   },
   "releaseNotesV22": {
