@@ -1,0 +1,85 @@
+================================================================================
+LISTAGEM DA CHROME WEB STORE — CHANGE CASE
+================================================================================
+
+--------------------------------------------------------------------------------
+BLOCO 1: DETALHES DO PRODUTO (Aba "Detalhes do app")
+--------------------------------------------------------------------------------
+
+[Título do Pacote]
+Change Case - Conversor de Texto
+
+[Resumo do Pacote / Short Description] (Limite: 132 caracteres | Atual: 122 caracteres)
+Converta textos da área de transferência para Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAIÚSCULAS e mais.
+
+[Categoria Sugerida]
+Produtividade (ou Ferramentas para Desenvolvedores)
+
+[Idioma Principal]
+Inglês (ou Português - Brasil)
+
+[Descrição Detalhada]
+O Change Case é uma ferramenta rápida, leve e intuitiva para conversão e formatação de textos na área de transferência ou selecionados em qualquer página web. Perfeito para programadores, redatores, estudantes e profissionais que precisam alternar formatos de texto sem perder tempo reescrevendo.
+
+Com um único clique no popup ou através do menu de contexto (botão direito do mouse), você formata qualquer texto instantaneamente.
+
+PRINCIPAIS FORMATOS SUPORTADOS:
+• Sentence case: Primeira letra de cada frase em maiúscula.
+• Title Case: Primeira letra de cada palavra em maiúscula.
+• Title-Kebab-Case (Chicago): Formatação de títulos hifenizados aplicando as regras do Chicago Manual of Style (mantém artigos, preposições e conjunções intermediárias em minúsculas).
+• UPPERCASE: Todas as letras em MAIÚSCULAS.
+• lowercase: Todas as letras em minúsculas.
+• CONSTANT_CASE: Palavras em maiúsculas separadas por sublinhado (NOME_DE_CONSTANTE).
+• PascalCase: Palavras juntas com a primeira letra maiúscula (NomeDeClasse).
+• camelCase: Primeira palavra em minúscula e as seguintes maiúsculas (nomeDaVariavel).
+• snake_case: Palavras em minúsculas separadas por sublinhado (nome_de_arquivo).
+• dot.case: Palavras separadas por ponto (propriedade.do.objeto).
+• param-case: Palavras em minúsculas separadas por hífen (kebab-case).
+• Sem acentos: Remove acentuações e diacríticos mantendo os caracteres base.
+
+RECURSOS ADICIONAIS:
+• Menu de Contexto: Selecione um texto em qualquer site, clique com o botão direito e aplique o formato desejado. Se o texto estiver em um campo de entrada editável, a substituição é automática!
+• Atalhos de Teclado:
+  - Alt + Shift + U: Converte para MAIÚSCULAS
+  - Alt + Shift + L: Converte para minúsculas
+  - Alt + Shift + T: Converte para Title Case
+  - Alt + Shift + C: Converte para camelCase
+• Feedback Visual: Confirmação imediata através de alteração nos botões ou notificação toast discreta na tela.
+• Multi-idiomas: Interface disponível em Português (Brasil e Portugal), Inglês, Espanhol e Francês.
+
+PRIVACIDADE E SEGURANÇA:
+• 100% Local e Offline: Todas as conversões ocorrem na memória do seu navegador.
+• Zero Rastreamento: Sem telemetria, sem cookies, sem anúncios e sem analytics.
+• Segurança Manifest V3: Sem código remoto e sem conexões com servidores externos.
+
+
+--------------------------------------------------------------------------------
+BLOCO 2: PRIVACIDADE (Aba "Privacidade" do Chrome Developer Dashboard)
+--------------------------------------------------------------------------------
+
+[Descrição do Único Propósito (Single Purpose Policy)]
+O único propósito da extensão Change Case é converter e formatar textos selecionados ou presentes na área de transferência do usuário entre múltiplos estilos de capitalização e nomenclatura (como Title Case, camelCase, Title-Kebab-Case Chicago, UPPERCASE, entre outros) de forma estritamente local e sob demanda.
+
+[Justificativa Técnica das Permissões]
+
+• clipboardRead:
+Necessária para ler temporariamente o texto presente na área de transferência do usuário quando este abre a janela popup da extensão e clica em um dos botões de formatação para conversão imediata.
+
+• clipboardWrite:
+Necessária para gravar o texto formatado e convertido de volta na área de transferência do usuário, permitindo colá-lo onde desejar.
+
+• contextMenus:
+Necessária para registrar as opções de conversão no menu de contexto (clique com o botão direito) do navegador, permitindo formatar textos selecionados diretamente em páginas web.
+
+• scripting:
+Necessária para injetar o texto convertido diretamente no campo de texto ou formulário ativo (input, textarea ou contentEditable) na página, ou exibir uma notificação visual discreta (toast) confirmando a cópia.
+
+• activeTab:
+Permite interagir de forma temporária e segura estritamente com a aba ativa no momento exato em que o usuário dispara uma ação pelo menu de contexto ou atalho de teclado, sem permissão permanente de monitoramento ou acesso ao histórico de navegação.
+
+[Declaração de Código Remoto]
+Marque: "Não, não estou usando código remoto"
+(A extensão utiliza exclusivamente arquivos empacotados localmente no pacote ZIP, sem carregamento de scripts externos).
+
+[URL da Política de Privacidade]
+https://rodrigopecanha83.github.io/Politicas-de-Privacidade/Change-Case-Privacy.html
