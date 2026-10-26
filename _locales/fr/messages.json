@@ -4,7 +4,7 @@
     "description": "Nom de l'extension."
   },
   "appDesc": {
-    "message": "Convertissez le texte en Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAJUSCULES, minuscules et plus.",
+    "message": "Convertissez et formatez facilement la casse des textes du presse-papiers ou des sélections en un seul clic.",
     "description": "Description de l'extension."
   },
   "releaseNotesV22": {

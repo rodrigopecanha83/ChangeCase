@@ -4,7 +4,7 @@
     "description": "Nome da extensão."
   },
   "appDesc": {
-    "message": "Converta textos para Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAIÚSCULAS, minúsculas e mais.",
+    "message": "Formate e converta instantaneamente a capitalização de textos da área de transferência ou de seleções na página.",
     "description": "Descrição da extensão."
   },
   "releaseNotesV22": {

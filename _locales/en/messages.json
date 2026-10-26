@@ -4,7 +4,7 @@
     "description": "The name of the extension."
   },
   "appDesc": {
-    "message": "Convert clipboard text to Title Case, Title-Kebab-Case (Chicago), UPPERCASE, lowercase, camelCase, snake_case and more.",
+    "message": "Easily convert and format text casing from your clipboard or highlighted web page selections with one click.",
     "description": "The description of the extension."
   },
   "releaseNotesV22": {

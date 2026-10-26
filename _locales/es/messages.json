@@ -4,8 +4,8 @@
     "description": "Nombre de la extensión."
   },
   "appDesc": {
-    "message": "Convierte texto a Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAYÚSCULAS, minúsculas y más.",
-    "description": "Descripción de la extensión."
+    "message": "Convierte y formatea fácilmente mayúsculas y minúsculas del portapapeles o textos seleccionados con un solo clic.",
+    "description": "Descripción de la extensão."
   },
   "releaseNotesV22": {
     "message": "Novedades de la v2.2: Se añadió el formato Title-Kebab-Case (Chicago) siguiendo las reglas de mayúsculas del Chicago Manual of Style para portugués e inglés; nuevo botón en la ventana emergente y opción en el menú contextual.",

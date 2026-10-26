@@ -9,8 +9,8 @@ BLOCO 1: DETALHES DO PRODUTO (Aba "Detalhes do app")
 [Título do Pacote]
 Change Case - Conversor de Texto
 
-[Resumo do Pacote / Short Description] (Limite: 132 caracteres | Atual: 122 caracteres)
-Converta textos da área de transferência para Title Case, Title-Kebab-Case (Chicago), camelCase, snake_case, MAIÚSCULAS e mais.
+[Resumo do Pacote / Short Description] (Limite: 132 caracteres | Atual: 112 caracteres)
+Formate e converta instantaneamente a capitalização de textos da área de transferência ou de seleções na página.
 
 [Categoria Sugerida]
 Produtividade (ou Ferramentas para Desenvolvedores)
