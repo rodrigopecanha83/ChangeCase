@@ -71,6 +71,10 @@
     "message": "param-case",
     "description": "Botão param-case."
   },
+  "btnTitleKebabCaseChicago": {
+    "message": "Title-Kebab-Case (Chicago)",
+    "description": "Botão Title-Kebab-Case seguindo o Estilo Chicago."
+  },
   "btnNoAccents": {
     "message": "Sem acentos",
     "description": "Botão para remover acentos."

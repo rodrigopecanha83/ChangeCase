@@ -142,6 +142,40 @@ function toParamCase(text) {
   return _getWords(text).join('-');
 }
 
+/**
+ * Converte para Title-Kebab-Case seguindo as regras do Chicago Manual of Style (PT e EN)
+ */
+function toTitleKebabCaseChicago(text) {
+  const words = _getWords(text);
+  if (words.length === 0) return '';
+
+  const lowerSet = new Set([
+    // PT - Artigos
+    'o', 'a', 'os', 'as', 'um', 'uma', 'uns', 'umas',
+    // PT - Conjunções
+    'e', 'ou', 'mas', 'nem',
+    // PT - Preposições
+    'de', 'do', 'da', 'dos', 'das', 'em', 'no', 'na', 'nos', 'nas',
+    'para', 'por', 'com', 'sem', 'sob', 'sobre', 'ao', 'aos',
+    // EN - Articles
+    'an', 'the',
+    // EN - Conjunctions
+    'and', 'but', 'nor', 'for', 'so', 'yet',
+    // EN - Prepositions
+    'to', 'of', 'in', 'on', 'at', 'by', 'with', 'from', 'into', 'onto'
+  ]);
+
+  const lastIndex = words.length - 1;
+
+  return words.map((word, index) => {
+    const isFirstOrLast = (index === 0 || index === lastIndex);
+    if (!isFirstOrLast && lowerSet.has(word)) {
+      return word.toLowerCase();
+    }
+    return _capitalizeWord(word);
+  }).join('-');
+}
+
 // Mapa de conversores disponíveis
 const converters = {
   toCapitalize,
@@ -154,5 +188,7 @@ const converters = {
   toSnakeCase,
   toDotCase,
   toParamCase,
+  toTitleKebabCaseChicago,
   toNoAccents
 };
+

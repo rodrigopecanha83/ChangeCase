@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 'btnSnakeCase', fn: converters.toSnakeCase },
     { id: 'btnDotCase', fn: converters.toDotCase },
     { id: 'btnParamCase', fn: converters.toParamCase },
+    { id: 'btnTitleKebabCaseChicago', fn: converters.toTitleKebabCaseChicago },
     { id: 'btnNoAccents', fn: converters.toNoAccents }
   ];
 

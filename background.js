@@ -20,6 +20,7 @@ chrome.runtime.onInstalled.addListener(() => {
     { id: 'ctx_toSnakeCase', labelKey: 'btnSnakeCase', defaultLabel: 'snake_case' },
     { id: 'ctx_toDotCase', labelKey: 'btnDotCase', defaultLabel: 'dot.case' },
     { id: 'ctx_toParamCase', labelKey: 'btnParamCase', defaultLabel: 'param-case' },
+    { id: 'ctx_toTitleKebabCaseChicago', labelKey: 'btnTitleKebabCaseChicago', defaultLabel: 'Title-Kebab-Case (Chicago)' },
     { id: 'ctx_toNoAccents', labelKey: 'btnNoAccents', defaultLabel: 'No accents' }
   ];
 

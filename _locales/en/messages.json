@@ -71,6 +71,10 @@
     "message": "param-case",
     "description": "param-case button label."
   },
+  "btnTitleKebabCaseChicago": {
+    "message": "Title-Kebab-Case (Chicago)",
+    "description": "Title-Kebab-Case using Chicago Manual of Style rules button label."
+  },
   "btnNoAccents": {
     "message": "No accents",
     "description": "Remove accents button label."

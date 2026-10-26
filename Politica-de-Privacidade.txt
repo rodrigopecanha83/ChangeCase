@@ -1,0 +1,74 @@
+================================================================================
+POLÍTICA DE PRIVACIDADE — CHANGE CASE (VERSÃO EM PORTUGUÊS)
+Última atualização: 26 de outubro de 2026
+================================================================================
+
+1. INTRODUÇÃO E VISÃO GERAL
+Esta Política de Privacidade descreve as práticas relativas aos dados da extensão Change Case ("Extensão"), desenvolvida por Rodrigo Peçanha.
+A Extensão foi projetada com foco total na privacidade do usuário: todo o processamento de texto ocorre de forma estritamente local e offline no próprio dispositivo/navegador do usuário. NENHUM dado pessoal, texto selecionado ou conteúdo da área de transferência é coletado, transmitido, armazenado em servidores externos ou compartilhado com terceiros.
+
+2. RESUMO DE PRIVACIDADE
+- Zero coleta de dados externos ou telemetria.
+- Processamento 100% local, em memória e offline.
+- Sem servidores remotos, rastreadores (trackers), analytics ou cookies.
+- Sem persistência remota de texto.
+
+3. COLETA E USO DE DADOS
+- Texto da Área de Transferência (Clipboard): Quando o usuário aciona a extensão pelo popup, ela lê temporariamente o texto presente no clipboard, aplica a transformação de caixa selecionada e grava o resultado de volta na área de transferência. Esse processamento ocorre estritamente na memória volátil do navegador durante a ação.
+- Texto Selecionado na Página: Quando acionado pelo menu de contexto ou teclas de atalho, a extensão obtém a seleção de texto ativa na aba atual para aplicar a formatação e reinseri-la no campo editável ou copiá-la. O conteúdo nunca sai do navegador.
+
+4. PERMISSÕES SOLICITADAS E JUSTIFICATIVAS TÉCNICAS
+- "clipboardRead": Necessária para ler o conteúdo textual da área de transferência quando o usuário abre o popup e escolhe um formato de conversão.
+- "clipboardWrite": Necessária para salvar o texto convertido de volta na área de transferência do usuário.
+- "contextMenus": Necessária para registrar e exibir as opções de conversão no menu de clique com o botão direito sobre seleções de texto.
+- "scripting": Necessária para executar a injeção do texto formatado diretamente no campo editável ativo ou exibir um toast discreto na página informando a cópia.
+- "activeTab": Permite que a extensão acesse temporariamente apenas a aba ativa atual no momento exato em que o usuário aciona a ação, sem acesso permanente ou a histórico de navegação.
+
+5. AUSÊNCIA DE CÓDIGO REMOTO E SERVIÇOS DE TERCEIROS
+A Extensão é totalmente compatível com o Manifest V3 do Google Chrome. Ela não carrega scripts remotos de CDNs, não utiliza eval, e não contém chamadas de rede para APIs de terceiros.
+
+6. RETENÇÃO E EXCLUSÃO DE DADOS
+A Extensão não armazena históricos ou conteúdos manipulados. Nenhuma informação de texto persiste após o fechamento da janela ou aba. Ao desinstalar a extensão, nenhum dado residual permanece.
+
+7. CONTATO E AUTORIA
+Desenvolvido por Rodrigo Peçanha.
+GitHub: https://github.com/rodrigopecanha83
+Repositório: https://github.com/rodrigopecanha83/ChangeCase
+
+
+================================================================================
+PRIVACY POLICY — CHANGE CASE (ENGLISH VERSION)
+Last updated: October 26, 2026
+================================================================================
+
+1. INTRODUCTION AND OVERVIEW
+This Privacy Policy describes the data practices of the Change Case extension ("Extension"), developed by Rodrigo Peçanha.
+The Extension is designed with user privacy as its core principle: all text processing and transformations take place strictly locally and offline within your browser. NO personal data, selected text, or clipboard content is collected, transmitted, stored on remote servers, or shared with third parties.
+
+2. PRIVACY SUMMARY
+- Zero external data collection or telemetry.
+- 100% local, in-memory, and offline processing.
+- No remote servers, trackers, analytics, or cookies.
+- No remote data persistence.
+
+3. DATA COLLECTION AND USAGE
+- Clipboard Text: When triggered via the popup window, the Extension temporarily reads text currently on your clipboard, applies the selected casing transformation, and writes the converted text back to your clipboard. This happens purely in volatile browser memory.
+- Selected Text on Web Pages: When triggered via context menu items or keyboard shortcuts, the Extension inspects the active selection to perform formatting and replaces it in editable fields or copies it. The text never leaves your device.
+
+4. PERMISSIONS REQUESTED AND TECHNICAL JUSTIFICATIONS
+- "clipboardRead": Required to read clipboard text when the user clicks a conversion button in the popup.
+- "clipboardWrite": Required to write the formatted text back into the clipboard.
+- "contextMenus": Required to add and display case transformation options in the browser's right-click menu.
+- "scripting": Required to inject the converted text directly into the active input element or show a transient on-screen toast notification.
+- "activeTab": Grants temporary access strictly to the active tab only when the user invokes the extension, with no persistent surveillance or browsing history access.
+
+5. NO REMOTE CODE OR THIRD-PARTY SERVICES
+The Extension strictly adheres to Chrome Manifest V3 guidelines. It loads no external scripts, uses no remote CDNs, executes no dynamic code (no eval), and makes zero network calls.
+
+6. DATA RETENTION AND DELETION
+The Extension does not retain or store any user text or history. All transformations are ephemeral. Uninstalling the extension leaves zero residual data.
+
+7. CONTACT AND AUTHOR
+Developed by Rodrigo Peçanha.
+GitHub: https://github.com/rodrigopecanha83
+Repository: https://github.com/rodrigopecanha83/ChangeCase
