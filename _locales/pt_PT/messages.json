@@ -4,8 +4,12 @@
     "description": "Nome da extensão."
   },
   "appDesc": {
-    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, CONSTANT_CASE, camelCase, snake_case e mais.",
+    "message": "Converta rapidamente o texto da área de transferência para Primeira letra maiúscula, MAIÚSCULAS, minúsculas, Title-Kebab-Case (Chicago), CONSTANT_CASE, camelCase, snake_case e mais.",
     "description": "Descrição da extensão."
+  },
+  "releaseNotesV22": {
+    "message": "Novidades da v2.2: Adicionado o formato Title-Kebab-Case (Chicago), segundo as regras de capitalização do Chicago Manual of Style para português e inglês; novo botão no popup e atalho no menu de contexto.",
+    "description": "Notas de lançamento da versão 2.2."
   },
   "headerTitle": {
     "message": "Conversor de Texto",

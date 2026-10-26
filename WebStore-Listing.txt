@@ -83,3 +83,37 @@ Marque: "Não, não estou usando código remoto"
 
 [URL da Política de Privacidade]
 https://rodrigopecanha83.github.io/Politicas-de-Privacidade/Change-Case-Privacy.html
+
+
+--------------------------------------------------------------------------------
+BLOCO 3: NOTAS DA VERSÃO / WHAT'S NEW (TODOS OS IDIOMAS)
+--------------------------------------------------------------------------------
+
+[Português (Brasil e Portugal)]
+Novidades da versão 2.2:
+• Adicionado o formato Title-Kebab-Case (Chicago): Formatação de títulos hifenizados aplicando as regras do Chicago Manual of Style (mantém artigos, preposições e conjunções intermediárias em minúsculas).
+• Novo botão dedicado no popup para conversão instantânea.
+• Nova opção adicionada no menu de contexto ao selecionar textos em páginas web.
+• Suporte completo de internacionalização em 5 idiomas.
+
+[English]
+What's new in version 2.2:
+• Added Title-Kebab-Case (Chicago) format: Hyphenated title capitalization adhering to the Chicago Manual of Style rules (keeps internal articles, prepositions, and conjunctions in lowercase).
+• New dedicated button in the popup for instant conversion.
+• New context menu option available when selecting text on web pages.
+• Full internationalization support in 5 languages.
+
+[Español]
+Novedades de la versión 2.2:
+• Se añadió el formato Title-Kebab-Case (Chicago): Formato de títulos con guiones aplicando las reglas del Chicago Manual of Style (mantiene artículos, preposiciones y conjunciones intermedias en minúsculas).
+• Nuevo botón dedicado en la ventana emergente para conversión instantánea.
+• Nueva opción agregada en el menú contextual al seleccionar texto en páginas web.
+• Soporte completo de internacionalización en 5 idiomas.
+
+[Français]
+Nouveautés de la version 2.2 :
+• Ajout du format Title-Kebab-Case (Chicago) : Formatage des titres avec tirets selon les règles du Chicago Manual of Style (maintient les articles, prépositions et conjonctions intermédiaires en minuscules).
+• Nouveau bouton dédié dans la fenêtre contextuelle pour une conversion instantanée.
+• Nouvelle option ajoutée dans le menu contextuel lors de la sélection de texte sur des pages web.
+• Prise en charge complète de l'internationalisation en 5 langues.
+

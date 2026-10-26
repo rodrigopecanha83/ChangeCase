@@ -4,8 +4,12 @@
     "description": "Nombre de la extensión."
   },
   "appDesc": {
-    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, CONSTANT_CASE, camelCase, snake_case y más.",
+    "message": "Convierte rápidamente el texto del portapapeles a Tipo oración, MAYÚSCULAS, minúsculas, Title-Kebab-Case (Chicago), CONSTANT_CASE, camelCase, snake_case y más.",
     "description": "Descripción de la extensión."
+  },
+  "releaseNotesV22": {
+    "message": "Novedades de la v2.2: Se añadió el formato Title-Kebab-Case (Chicago) siguiendo las reglas de mayúsculas del Chicago Manual of Style para portugués e inglés; nuevo botón en la ventana emergente y opción en el menú contextual.",
+    "description": "Notas de la versión 2.2."
   },
   "headerTitle": {
     "message": "Conversor de Texto",
